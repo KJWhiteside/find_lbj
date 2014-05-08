@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="x09-NT-Dlf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Walkthrough View Controller-->
+        <scene sceneID="i2K-Mz-k1N">
+            <objects>
+                <viewController id="Mf7-te-6IO" customClass="WalkthroughViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bxc-rc-wbt"/>
+                        <viewControllerLayoutGuide type="bottom" id="2jm-ZX-0AX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TFf-Ju-d99">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TUTORIAL SCREEN_v2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JRn-W2-kB5">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1l-nk-vp8">
+                                <rect key="frame" x="361" y="258" width="187" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tutorial_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="tutorial_btn_rev.png"/>
+                                <connections>
+                                    <action selector="exitWalkthrough:" destination="Mf7-te-6IO" eventType="touchUpInside" id="aHF-dl-Y9P"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial_bullet.png" translatesAutoresizingMaskIntoConstraints="NO" id="b7i-u3-ldC">
+                                <rect key="frame" x="46" y="82" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial_bullet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ae0-Sd-YKF">
+                                <rect key="frame" x="46" y="145" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial_bullet.png" translatesAutoresizingMaskIntoConstraints="NO" id="fh2-QS-DhH">
+                                <rect key="frame" x="46" y="217" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To begin, select a Zone to play in. Each zone has it's own puzzle to solve!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="476" translatesAutoresizingMaskIntoConstraints="NO" id="ejD-Hy-pb6">
+                                <rect key="frame" x="72" y="67" width="476" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="476" translatesAutoresizingMaskIntoConstraints="NO" id="opm-nV-Bc4">
+                                <rect key="frame" x="72" y="120" width="476" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Each clue relates to a building on the Texas State campus. Solve the clue to fnd out where you need to go. When you get there, click the "IM HERE" button to check if you were right.</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="476" translatesAutoresizingMaskIntoConstraints="NO" id="9wS-1k-8im">
+                                <rect key="frame" x="72" y="194" width="476" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Once you've figured out where to go, go there! You'll find the next clue. Once you've uncovered enough clues, you'll have solved the mystery.</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0h3-ag-lcS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WrV-0H-XFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="-295"/>
+        </scene>
+        <!--Region Select View Controller-->
+        <scene sceneID="CeS-z2-hWd">
+            <objects>
+                <viewController id="Sr2-qC-IlB" customClass="RegionSelectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rcK-bO-4iH"/>
+                        <viewControllerLayoutGuide type="bottom" id="GW3-MH-qJO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d5Y-v9-fxD">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lbj_map.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Bes-ia-IwI">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkK-yk-bdm" customClass="OBShapedButton">
+                                <rect key="frame" x="247" y="57" width="236" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Region 1" image="button_zone_1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectRegion:" destination="Sr2-qC-IlB" eventType="touchUpInside" id="EFO-a1-bVI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="seu-OM-XwS"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="Mf7-te-6IO" kind="push" identifier="ShowWalkthruSegue" id="uMp-r3-IZb"/>
+                        <segue destination="YPD-9f-g2b" kind="push" identifier="PlotDisplaySegue" id="hcC-5H-O1t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cC-3V-rIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="275"/>
+        </scene>
+        <!--Wrong Location View Controller-->
+        <scene sceneID="3X0-c7-sPX">
+            <objects>
+                <viewController id="exD-hI-WIl" customClass="WrongLocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bdc-5Y-HCx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qja-ee-dX5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EA4-0m-ges">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="incorrect_v2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dTc-Ve-jXN">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="305" translatesAutoresizingMaskIntoConstraints="NO" id="nte-ms-nSk">
+                                <rect key="frame" x="98" y="66" width="305" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Looks like you're not quite there! Make sure to check the Texas Star to see how close you are. (The dimmer the star, the farther away the building you're looking for is.)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you're stuck, you can skip this clue, but it'll cost you thirty minutes!" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="305" translatesAutoresizingMaskIntoConstraints="NO" id="G8z-t4-oyv">
+                                <rect key="frame" x="98" y="190" width="305" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIN-BE-NvY">
+                                <rect key="frame" x="361" y="251" width="187" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back_button_v2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonDidPress:" destination="exD-hI-WIl" eventType="touchUpInside" id="F11-F5-7j1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ria-ND-Pfo">
+                                <rect key="frame" x="98" y="251" width="187" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="skip.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButtonDidPress:" destination="exD-hI-WIl" eventType="touchUpInside" id="eKX-qe-bSf"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="texas_star.png" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-Sx-3mY">
+                                <rect key="frame" x="420" y="60" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="piO-XR-vqZ"/>
+                    <connections>
+                        <outlet property="starView" destination="YYh-Sx-3mY" id="ASw-RU-PSA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmD-qB-13V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2164" y="-354"/>
+        </scene>
+        <!--Clue Display View Controller-->
+        <scene sceneID="MKD-wl-63R">
+            <objects>
+                <viewController id="nTF-lX-0pL" customClass="ClueDisplayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sZn-SR-hH8"/>
+                        <viewControllerLayoutGuide type="bottom" id="BGH-No-qPX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Bp-81-pHB">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clue_background (1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hNf-PJ-ImE">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scroll_clue.png" translatesAutoresizingMaskIntoConstraints="NO" id="CS2-WI-WDW">
+                                <rect key="frame" x="92" y="49" width="456" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hej-tk-o1K">
+                                <rect key="frame" x="361" y="250" width="187" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="I'm Here" image="here_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="here_btn_rev.png"/>
+                                <connections>
+                                    <action selector="checkLocation:" destination="nTF-lX-0pL" eventType="touchUpInside" id="gbi-Cf-lnI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj1-AY-3Ww">
+                                <rect key="frame" x="92" y="250" width="187" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="another_clue_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="another_clue_btn_rev.png"/>
+                                <connections>
+                                    <action selector="helpButtonPressed:" destination="nTF-lX-0pL" eventType="touchUpInside" id="Z4d-iH-Sbf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="324" translatesAutoresizingMaskIntoConstraints="NO" id="JcZ-35-lWl">
+                                <rect key="frame" x="158" y="49" width="324" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The clue description goes here. There will be lots of text, so this label is pretty big. Like. Big. Like, real big. Not as big as space, but then again, what is?</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l3f-7l-aPr"/>
+                    <connections>
+                        <outlet property="clueDisplay" destination="JcZ-35-lWl" id="584-Wy-xlQ"/>
+                        <segue destination="SEs-n2-O7c" kind="push" identifier="ScoreDisplaySegue" id="4ma-Gp-gYv"/>
+                        <segue destination="exD-hI-WIl" kind="push" identifier="WrongLocationSegue" id="9XI-Ms-b6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaZ-gl-btG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133" y="275"/>
+        </scene>
+        <!--Score Display View Controller-->
+        <scene sceneID="86f-2D-z2p">
+            <objects>
+                <viewController id="SEs-n2-O7c" customClass="ScoreDisplayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q8r-if-88F"/>
+                        <viewControllerLayoutGuide type="bottom" id="12h-Cg-r5I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qOr-2d-glB">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="leaderboard.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mJo-Go-ygw">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations! Your time: 1 Hour, 14 Minutes, 22 Seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXo-4Z-DSF">
+                                <rect key="frame" x="87" y="64" width="454" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.78823529411764703" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4A-yp-PYS">
+                                <rect key="frame" x="344" y="5" width="155" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="done_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneClicker:" destination="SEs-n2-O7c" eventType="touchUpInside" id="eRv-b3-qBa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeb-o8-kpv">
+                                <rect key="frame" x="20" y="56" width="41" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="socialMediaBtn:" destination="SEs-n2-O7c" eventType="touchUpInside" id="Abh-HW-TPd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cJS-sf-3oF"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="sXo-4Z-DSF" id="8HO-LL-zUR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zUq-VE-1uE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2993" y="259"/>
+        </scene>
+        <!--Plot Display View Controller-->
+        <scene sceneID="iyN-2P-Wcd">
+            <objects>
+                <viewController id="YPD-9f-g2b" customClass="PlotDisplayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rib-wP-nmF"/>
+                        <viewControllerLayoutGuide type="bottom" id="nec-1Y-08C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FTf-ik-rhW">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plot_BG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JTm-ha-4mU">
+                                <rect key="frame" x="0.0" y="0.0" width="573" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="528" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-ip-BXW">
+                                <rect key="frame" x="20" y="92" width="528" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The statue of Texas State's greatest hero, LBJ, has been stolen! Luckily, we have a number of informants who might be able to help you find it.</string>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.78823529410000004" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Follow the clues around campus, and see if you can recover our statue! Hurry, because you're racing against all your friends!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="528" translatesAutoresizingMaskIntoConstraints="NO" id="Mje-Ve-6Ml">
+                                <rect key="frame" x="20" y="155" width="528" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.78823529410000004" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2u-E8-PIx">
+                                <rect key="frame" x="361" y="250" width="187" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tutorial_btn_rev.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="tutorial_btn.png"/>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="YPD-9f-g2b" eventType="touchUpInside" id="rmo-PU-TQd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rQz-ea-n7U"/>
+                    <connections>
+                        <segue destination="nTF-lX-0pL" kind="push" identifier="ClueDisplaySegue" id="xdX-Lg-48E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q95-rA-Icg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381" y="275"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dfK-ym-QoY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="x09-NT-Dlf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UtW-5O-Eqn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Sr2-qC-IlB" kind="relationship" relationship="rootViewController" id="d9R-Kh-EOw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gvu-z1-jNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TUTORIAL SCREEN_v2.jpg" width="960" height="640"/>
+        <image name="another_clue_btn.png" width="253" height="72"/>
+        <image name="another_clue_btn_rev.png" width="253" height="72"/>
+        <image name="back_button_v2.png" width="253" height="72"/>
+        <image name="button_zone_1.png" width="778" height="531"/>
+        <image name="clue_background (1).jpg" width="960" height="640"/>
+        <image name="done_button.png" width="253" height="72"/>
+        <image name="here_btn.png" width="253" height="72"/>
+        <image name="here_btn_rev.png" width="253" height="72"/>
+        <image name="incorrect_v2.jpg" width="960" height="640"/>
+        <image name="lbj_map.jpg" width="960" height="640"/>
+        <image name="leaderboard.jpg" width="960" height="640"/>
+        <image name="plot_BG.jpg" width="960" height="640"/>
+        <image name="scroll_clue.png" width="800" height="440"/>
+        <image name="skip.png" width="253" height="72"/>
+        <image name="texas_star.png" width="322" height="311"/>
+        <image name="tutorial_btn.png" width="253" height="72"/>
+        <image name="tutorial_btn_rev.png" width="253" height="72"/>
+        <image name="tutorial_bullet.png" width="20" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
